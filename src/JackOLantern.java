@@ -22,20 +22,26 @@ public class JackOLantern {
 
     public void fill(String str)
     {
-
+        for(int i = 0; i < faceFeatures.length; i++)
+        {
+            for(int j = 0; j < faceFeatures[i].length; j++)
+            {
+                faceFeatures[i][j] = str;
+            }
+        }
     }
 
     public String toString()
     {
-        String pumpky = "";
-        for(int i = 0; i < faceFeatures.length; i++)
+        String pumpkin = "";
+        for(int i = 0; i < faceFeatures.length - 1; i++)
         {
             for(int j = 0; j < faceFeatures[i].length; i++)
             {
-
+                pumpkin += "\n" + faceFeatures[j];
             }
         }
-        return pumpky;
+        return pumpkin;
     }
 }
 
