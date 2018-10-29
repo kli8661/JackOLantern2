@@ -7,14 +7,6 @@ public class JackOLantern {
         this.faceFeatures = faceFeatures;
     }
 
-    public String[][] getFaceFeatures() {
-        return faceFeatures;
-    }
-
-    public void setFaceFeatures(String[][] faceFeatures) {
-        this.faceFeatures = faceFeatures;
-    }
-
     public void edit(String replace, int row, int column)
     {
 
@@ -34,12 +26,13 @@ public class JackOLantern {
     public String toString()
     {
         String pumpkin = "";
-        for(int i = 0; i < faceFeatures.length - 1; i++)
+        for(int i = 0; i < faceFeatures.length; i++)
         {
-            for(int j = 0; j < faceFeatures[i].length; i++)
+            for(int j = 0; j < faceFeatures[i].length; j++)
             {
-                pumpkin += "\n" + faceFeatures[j];
+                pumpkin += faceFeatures[i][j];
             }
+            pumpkin += "\n";
         }
         return pumpkin;
     }

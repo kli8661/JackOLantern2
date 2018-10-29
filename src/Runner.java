@@ -1,12 +1,14 @@
-import java.util.Arrays;
-
 public class Runner {
     public static void main(String[] args)
     {
-        String[][] faceFeatures = new String[8][5];
+        String[][] faceFeatures = new String[5][8];
         JackOLantern jack = new JackOLantern(faceFeatures);
-        jack.toString();
         jack.fill("x");
-
+        faceFeatures[0][0] = " ";
+        faceFeatures[4][0] = " ";
+        faceFeatures[0][7] = " ";
+        faceFeatures[4][7] = " ";
+        String result = jack.toString();
+        System.out.println(result);
     }
 }
