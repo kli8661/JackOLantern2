@@ -9,6 +9,8 @@ public class Runner {
         faceFeatures[0][7] = " ";
         faceFeatures[4][7] = " ";
         String result = jack.toString();
+        jack.edit("*","1","3");
         System.out.println(result);
+
     }
 }

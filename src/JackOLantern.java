@@ -9,7 +9,7 @@ public class JackOLantern {
 
     public void edit(String replace, int row, int column)
     {
-
+        faceFeatures[row][column] = replace;
     }
 
     public void fill(String str)
